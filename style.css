@@ -321,3 +321,164 @@
     object-fit: fill;
     background-position: center top;
 }
+
+/*
+.Contact {
+    background-color: aliceblue;
+    font-family: "zen dots";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contact .phoneScreen {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(4, 12, 21);
+    border-radius: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.Contact .mainscreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+}
+
+.phoneScreen .button {
+    display: flex;
+    flex-direction: row;
+}
+
+.phoneScreen h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.phoneScreen h4 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.phoneScreen form {
+    text-align: center;
+}
+
+.contactTitle {
+    display: flex;
+    justify-self: flex-start;
+    padding: 2rem;
+    font-size: 2rem;
+
+}
+*/
+.contact {
+    font-family: "zen dots";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5rem 25rem;
+    width: 100%;
+
+}
+
+.contactTitle {
+    margin: 0.5rem;
+    font-size: 2rem;
+    grid-column: span 3;
+    text-align: center;
+}
+
+.contact .button a{
+    flex-direction: row;
+    display: flex;
+    text-decoration: none;
+    margin: 0.5rem;
+    border-radius: 3rem;
+    color: aliceblue;
+    width: 12rem;
+    align-items: center;     /* vertically center icon + text */
+    justify-content: center; /* horizontally center inside button */
+    gap: 0.5rem;          
+}
+
+.contact .Socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+}
+
+.IMPhoto {
+    height: 100%;
+    width: 100%; 
+    overflow: hidden;
+    display: block;
+    display: block;
+    object-fit: cover;
+    border-radius: 4rem;
+    transition: 1s;
+}
+
+.IMPhoto img{
+    width: 100%;        /* shrink to container width */
+    height: 100%;       /* shrink to container height */
+    object-fit: cover; 
+    object-position: top center;
+    transition: 1s;
+}
+
+.Socials h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.twitter {
+    background-color: #1dcaff;
+    border-radius: 3rem;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.linkedin {
+    transition: 0.4s;
+    text-align: center;
+    background-color: #0A66C2;
+    border-radius: 3rem;
+}
+
+.github {
+    background-color: #5FED83;
+    border-radius: 3rem;
+    transition: 0.4s;
+
+}
+
+.Socials .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twitter:hover {
+    scale: 1.1;
+}
+
+.linkedin:hover {
+    scale: 1.1;
+}
+
+.github:hover {
+    scale: 1.1;
+}
+
+.IMPhoto img:hover {
+    filter: saturate(10%);
+    cursor: pointer;
+    scale: 1.1
+}
