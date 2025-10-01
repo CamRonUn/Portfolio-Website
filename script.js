@@ -43,6 +43,10 @@ function triClubPhotos() {
     currentIndexA = (currentIndexA + 1) % photos.length
 }
 
+// const intro = document.getElementById('Intro')
+// const Projects = document.getElementById('Projects')
+// const Certs = document.getElementById('Certs')
+// const Contact = document.getElementById('Contact')
 
 changetext();
 triClubPhotos();
