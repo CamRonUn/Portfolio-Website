@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 .nav {
     position: sticky;
     top: 0;
@@ -65,6 +66,7 @@
     justify-content: center;
     font-family: "Zen Dots";
     gap: 1rem;
+    text-align: center;
 }
 
 .intro h2{
@@ -133,6 +135,8 @@
     font-family: "Zen Dots";
     flex-direction: column;
     transition: 0.3s;
+    align-self: start;
+    text-align: center;
 }
 
 .projects .projectTitle p {
@@ -254,16 +258,18 @@
 
 .cardcontainer {
     perspective: 1000px;
-    height: 30vw;
+    place-items: center;   
     display:  flex;
     align-items: center;
     justify-content: center;
+    height:100%;
+    width: 100%;
 }
 
 .card {
     position: relative;
-    width: 200px;
-    height: 300px;
+    width: 20vw;
+    height: 40vh;
     transform-style: preserve-3d;
     transition: transform 0.6s;
 }
@@ -305,13 +311,12 @@
 }
 
 .Certificates {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
     font-family: "zen dots";
     background-color: rgb(0, 19, 26);
-    height: 100vh;
+    min-height: 100vh;
     width: 100vw;
 }
 
@@ -320,6 +325,7 @@
     justify-content: center;
     align-items: center;
     gap: 5rem;
+    margin-bottom: 10vh;
 }
 
 .certTitle {
@@ -327,6 +333,15 @@
     padding: 1.5rem;
     font-size: 2rem;  
     text-align: center;  
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.certTitle h2{
+    margin-left: 0.5rem;
 }
 
 .backcard i:hover {
@@ -404,7 +419,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 9rem 25rem;
-    width: 100%;
+    width: 100vw;
+    height: auto;
 
 }
 
@@ -546,4 +562,103 @@
 
 .footer-socials a:hover {
     color: #00aced;  /* highlight effect on hover */
+}
+
+ @media screen and (max-width: 1200px) {
+
+    .contact {
+    display: flex;
+    flex-direction: column;
+ }
+
+    .contact .IMPhoto{
+        display: none;
+    }
+
+ }
+
+@media screen and (max-width: 938px) {
+
+
+    .projects {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+  .projects .projectTitle,
+  .projects .projectchanging {
+    grid-column: span 1;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .nav h1{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 971px) {
+
+    .cards{
+        flex-direction: column;
+    }
+    .card{
+    width: 40vw;
+    height: 29vh; 
+    }
+
+    .qualText{
+        display: none;
+    }
+
+
+    .certTitle h2{
+    margin-left: 0.0rem;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+   .navbar li a{
+    font-size: 1rem;
+   }
+
+    .certTitle h2{
+    font-size: 2rem;
+    }
+
+   .intro h2{
+    font-size: 3.5rem;
+   }
+
+   .intro p{
+    font-size: 2rem;
+   }
+
+   .intro i{
+    font-size: 2rem;
+   }
+
+  .projects .projectTitle {
+    font-size: 1.5rem;
+}
+
+
+  .projects .projectTitle p{
+    font-size: 1rem;
+}
+
+.projects .project1,
+.projects .project2,
+.projects .projectchanging {
+    padding: 1rem;
+}
+
+#Certs,
+#Intro,
+#Projects,
+#Contact {
+       scroll-margin-top: 4rem;
+}
+
 }
