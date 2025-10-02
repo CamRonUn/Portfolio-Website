@@ -564,6 +564,10 @@
     color: #00aced;  /* highlight effect on hover */
 }
 
+.button a {
+    text-decoration: none;
+    color: rgb(0, 19, 26);}
+
  @media screen and (max-width: 1200px) {
 
     .contact {
